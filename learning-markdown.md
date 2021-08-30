@@ -19,7 +19,7 @@ __This will also be bold__
 
 :cowboy_hat_face: :thumbsup: :tada: :rocket:
 
-> I've always been more interested in the future than in the past.
+> I've always been more interested in the future than in the past. 
 > ***Quote by Grace Hopper***
 
 ## Lists
