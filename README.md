@@ -26,3 +26,5 @@ I also learn Five web development issues:
 -   Resopsive Web Design
 
 I also learn how to use Figma.
+
+Short cut to clear code: Shift + alt + F
