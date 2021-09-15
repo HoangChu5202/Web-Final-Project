@@ -15,7 +15,7 @@ I also learn some basic thing in markdown too.
 In this chapter I learn about how internet work, how web application work.
 
 I started to learn about HTML and CSS. 
-    - I learn some basic stuff in HTML, relationship between \< html \>, \< head\> and \< body \>
-    - In CSS I learn how to change color of background, fornt-size, font-family, margin, padding and boder.
+    -  I learn some basic stuff in HTML, relationship between \< html \>, \< head\> and \< body \>
+    -  In CSS I learn how to change color of background, fornt-size, font-family, margin, padding and boder.
 
 I also learn how to use Figma.
