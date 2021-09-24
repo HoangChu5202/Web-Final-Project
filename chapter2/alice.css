@@ -15,7 +15,6 @@ body {
 p {
     line-height: 20px;
     text-align: justify;
-    font-size: 15px;
     outline: lawngreen;
 }
 .span {
@@ -23,5 +22,5 @@ p {
     font-style: italic;
 }
 .alice {
-    font-weight: 1000;
+    font-weight: 800;
 }
