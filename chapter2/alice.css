@@ -4,5 +4,24 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: auto;
+    text-align: center;
+}
+#story {
+    width: 50%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 auto;
+}
+p {
+    line-height: 20px;
+    text-align: justify;
+    font-size: 15px;
+    outline: lawngreen;
+}
+.span {
+    background-color: lightgray;
+    font-style: italic;
+}
+.alice {
+    font-weight: 1000;
 }
