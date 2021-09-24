@@ -27,4 +27,4 @@ I also learn Five web development issues:
 
 I also learn how to use Figma.
 
-Short cut to clear code: Shift + alt + F
+Short cut to clean code: Shift + alt + F
