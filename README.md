@@ -12,13 +12,13 @@ This is what I learned in **GitHub**:
 I also learn some basic thing in markdown too.
 
 ## Chapter 1 - Introduction to web development
-In this chapter I learn about how internet work, how web application work.
+In this chapter I learned about how internet work, how web application work.
 
-I started to learn about HTML and CSS. 
+I started to learned about HTML and CSS. 
 -  I learn some basic stuff in HTML, relationship between \< html \>, \< head\> and \< body \>
 -  In CSS I learn how to change color of background, fornt-size, font-family, margin, padding and boder.
 
-I also learn Five web development issues:
+I also learned Five web development issues:
 -   Users and usability
 -   Cross-browser compatibility
 -   User accessibility
@@ -27,4 +27,13 @@ I also learn Five web development issues:
 
 I also learn how to use Figma.
 
-Short cut to clean code: Shift + alt + F
+
+## Chapter 2 - Code, Test, and Validate a Web page
+In this chapter I learned about HTML syntax: how to code elements and tags, how to code attributes and how to code comments and whitespace.
+In CSS syntax I learned about: How to code CSS style rules and comments and how to code basic selectors.
+
+To test and debug a web page we should Open with Live Sever.
+Short cut to indentation on Windows: Shift + alt + F.
+‘ is different from '.
+To validate a HTML file: [W3C Markup Validation Service](https://validator.w3.org/).
+To validate a CSS file: [ W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
