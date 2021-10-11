@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito+Sans:wght@200;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+h1 {
+    font-family: 'Rancho', cursive;
+}
+h1, h4, address p{
+    margin: 0 0 5px 0;
+}
+address {
+    font-style: normal;
+}
+address p {
+    font-size: 18px;
+    display: inline;
+    font-weight: 200;
+}
+address p a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+address p span {
+    vertical-align: text-top;
+}
+h1 {
+    font-family: 'Rancho', cursive;
+}

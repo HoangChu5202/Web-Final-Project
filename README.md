@@ -37,3 +37,30 @@ Short cut to indentation on Windows: Shift + alt + F.
 ‘ is different from '.
 To validate a HTML file: [W3C Markup Validation Service](https://validator.w3.org/).
 To validate a CSS file: [ W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
+
+
+## Chapter 3 - HTML to structure a web page
+In this chapter I learned about: How to code the head section.
+The <meta> tag can used to:
+- Identify the character set used (It will always be utf-8 for html5 documents).
+- Provide a description to summarize the contents (It will be displayed in search engine results)
+- Provide a list of keywords related to the page content (To possibly help with search engine optimization)
+- Aid in the adjustment of content between desktop and mobile screens.
+- Assist is
+A recommend line to add in head section of all html file is:
+```html
+<meta name="viewport" content="width=device-width">
+```
+It will make it easier to adjust content between desktop and mobile screens.
+
+I learned about special blocks of text. It is:
+- <pre> tag.
+- <blockquote> tag.
+- <address> tag.
+
+I also learned how to use Google fonts, <sub> and <sup> tag and how to code character entities.
+
+Using <div> tags whenever I need a parent element to group together a bunch of child elements. The <span> tag acts the same but is an inline element. 
+
+Whenever linking to another website I should add the target="_blank" attribute to open the link in a new tab.
+
