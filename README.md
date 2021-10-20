@@ -54,13 +54,15 @@ A recommend line to add in head section of all html file is:
 It will make it easier to adjust content between desktop and mobile screens.
 
 I learned about special blocks of text. It is:
+```html
 - <pre> tag.
 - <blockquote> tag.
 - <address> tag.
+```
 
-I also learned how to use Google fonts, <sub> and <sup> tag and how to code character entities.
+I also learned how to use Google fonts, `<sub>` and `<sup> `tag and how to code character entities.
 
-Using <div> tags whenever I need a parent element to group together a bunch of child elements. The <span> tag acts the same but is an inline element. 
+Using `<div>` tags whenever I need a parent element to group together a bunch of child elements. The <span> tag acts the same but is an inline element. 
 
 Whenever linking to another website I should add the target="_blank" attribute to open the link in a new tab.
 
