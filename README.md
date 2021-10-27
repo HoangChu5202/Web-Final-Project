@@ -66,3 +66,60 @@ Using `<div>` tags whenever I need a parent element to group together a bunch of
 
 Whenever linking to another website I should add the target="_blank" attribute to open the link in a new tab.
 
+## Chapter 4 - CSS to format elements
+**Three ways to provide CSS styles for web pages**
+- You can use as many external style sheets that you want by link it to your HTML file.
+```html
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/layout.css" rel="stylesheet">
+```
+- You can also style it in the `<head></head>` section by using <style></style> tags.
+```html
+<head>
+    <link href="styles/main.css" rel="stylesheet">
+    <style>
+        h1 { color: blue; }
+    </style>
+</head>
+```
+- Finally, styles can be applied directly to any element using the style attribute. These are called inline styles.
+```html
+<h1 style="color: red;">Text</h1>
+```
+- Absolute measurements: These units are of fixed size. They do not change according to screen size or anything else.
+- Relative measurements: These measurements will change based on the screen size. In most browsers, the default font size is 16px.
+- Viewport Units: These measurements are relative to the browser’s viewport size. The viewport is the user's visible area of a web page.
+**CSS style rule with relational selectors**
+- Descendant: A CSS selector for descendants of a specific parent are written as parent child with a space between the element names.
+```css
+ul a {
+    box-sizing: border-box;
+}
+```
+- Adjacent siblings: A CSS selector for adjacent siblings can be written with a plus sign separating their names.
+```css
+h2 + p {
+    font-weight: bold;
+}
+```
+- Child: A CSS selector child selector is written with a greater than sign between two elements.
+```css
+main > p { font-size: 80%; }
+```
+- General sibling: A CSS selector for sibling elements is written with a tilde symbol between two elements.
+```css
+h2 ~ p { margin-left: 2em; }
+```
+**How the cascade rules work**
+- <u>*Specificity*</u> is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. 
+
+The following list of selector types increases by specificity:
+
+- (+0) Universal selector (`*`) and combinators (`+, >, ~`) have no effect on specificity.
+- (+1) Type selectors (like `h1`) and pseudo-elements (like `::before`) have a low effect  on specificity.
+- (+10) Class selectors (like `.example`), attributes selectors (like `[type="radio"]`) and pseudo-classes (like `:hover`) have a medium effect on specificity.
+- (+100) ID selectors (like `#example`) have a high effect on specificity.
+- (Highest) Inline styles added to an element always overwrite any styles in external stylesheets, and thus can be thought of as having the highest specificity.
+- (Ultimate) The `!important`rule can be used on any style declaration to override any other declarations. Using `!important` should be avoided because it makes debugging more difficult by breaking the natural cascading in your stylesheets.
+
+
