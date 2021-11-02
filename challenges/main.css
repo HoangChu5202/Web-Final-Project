@@ -1,42 +1,85 @@
-body {
-	height: 100%;
+html, body {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	font-weight: 300;
+	line-height: 1.5;
+  }
+  
+  body {
+	font-family: 'Lato', sans-serif;
+	background-image: url('https://content.codecademy.com/projects/make-a-website/lesson-3/background.jpg');
+	background-position: center top;
+	background-size: cover;
 	margin: 0;
-	text-align: center;
-	width: 100%;
-}
-
-h1 {
-	font-size: 32px;
-  font-family: Palatino, 'Palatino Linotype', serif;
-  color: rgb(218,190,206);
-}
-
-h2 {
-	font-size: 56px;
-}
-
-
-.hero {
-	padding: 250px 0;
-	margin: 30px;
-  font-family: 'Trebuchet MS', Helvetica, sans-serif;
-  background-image: url("https://content.codecademy.com/projects/make-a-website/lesson-2/bg.jpg");
-  background-size: cover;
-  color: #fff;
-}
-
-
-p {
-  font-size: 2rem;
-}
-
-.hero a {
-	color: #00FFAA;
-	font-size: 24px;
+  }
+  
+  a {
+	color: #204156;
 	text-decoration: none;
-  font-size: 1.25em
-}
-#footer {
-  font-size: 0.75rem;
-}
-
+  }
+  
+  .page-title {
+	text-align: center;
+	font-weight: 100;
+  }
+  
+  .page-description {
+	border: 1px solid #000;
+	margin: 2px;
+	text-align: center;
+	padding: 30px;
+  }
+  
+  .gallery {
+	margin-top: 20px;
+  }
+  
+  .gallery-item {
+	margin: 20px;
+  }
+  
+  .gallery-item .thumbnail {
+	border: 5px solid #fff;
+  }
+  
+  /* FOOTER NAVIGATION */
+  
+  nav {
+	background-color: #FFF;
+  }
+  
+  nav li {
+	display: inline;
+	margin: 0;
+	padding: 0 10px;
+  }
+  
+  nav ul {
+	display: inline;
+  }
+  
+  .contact-btn {
+	float: right;
+  }
+  
+  .contact-btn a {
+	cursor: pointer;
+	margin-right: 30px;
+	padding: 8px 18px;
+	border: 1px solid #204156;
+  
+  }
+  
+  /* .contact-btn a:active { }*/
+  
+  
+  
+  nav a {
+	height: 60px;
+	line-height: 60px;
+	color: #204156;
+	text-decoration: none;
+  }
+  
+  
