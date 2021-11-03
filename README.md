@@ -123,3 +123,66 @@ The following list of selector types increases by specificity:
 - (Ultimate) The `!important`rule can be used on any style declaration to override any other declarations. Using `!important` should be avoided because it makes debugging more difficult by breaking the natural cascading in your stylesheets.
 
 
+## Chapter 5 - CSS Box Model
+**Box model**
+
+The CSS box model consists of 4 components:
+
+- The content: which may include text and images.
+- `padding`: the space between the content and the border.
+- `border`: the division between the padding and margin.
+- `margin`: the space outside of the border (the space between elements).
+
+Current versions of all browsers use  “width or height + padding + border = actual width or height” box model.
+Using `box-sizing: border-box` to make the calculate correct.
+
+**Margin and Padding**
+```
+padding/margin: 5px 10px 15px 20px;
+```
+It will go in order: top, right, bottom, left.
+
+Padding, margin, and border can be controlled on all four sides: top, right, bottom, and left.
+
+- `padding-top, margin-top, border-top`
+- `padding-right, margin-right, border-right`
+- `padding-bottom, margin-bottom, border-bottom`
+- `padding-left, margin-left, border-left`
+
+**CSS reset**
+Some developers will just use a [CSS reset file](https://meyerweb.com/eric/tools/css/reset/) to clear default margin and padding so they can define their own values.
+
+OR you can go to CSS file and set in wild card selector:
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+```
+
+**Border**
+
+`border`: This property sets the width, style and color of all four sides on one line. Or it can be written as separate properties.
+- `border-width`
+- `border-style`
+- `border-color`
+
+`border-radius`: applies rounded corners to a box. Individual corners can also be modified.
+- `border-top-left-radius`
+- `border-top-right-radius`
+- `border-bottom-right-radius`
+- `border-bottom-left-radius`
+
+`box-shadow`: applies a drop shadow to a box.
+
+**Background**
+
+`background`: allows you to change the background color, image, repeat, attachment, and position all on one line.
+Or it can be written as separate properties.
+- `background-color`: specifies a color as the background.
+- `background-image`: specifies an image as the background.
+- `background-repeat`: specifies if and how an image repeats horizontally and veritcally.
+- `background-attachment`: determines if a background is scrollable or fixed.
+- `background-position`: the horizontal and vertical position of a background image.
+
+`linear-gradient()`: a special property that works with background or background-image to set a multi-colored background.
