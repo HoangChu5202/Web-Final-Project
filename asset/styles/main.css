@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Head title */
+header {
+    height: 300px;
+    background-image: url("../images/sekiro-background-header.png");
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+    background-position-x: center;
+    position: relative;
+  }
+  #title {
+    background-color: yellow;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    z-index: 1;
+    padding: 50px;
+  }
+
+/* Top navigation bar  */
+#menu_1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#menu_1 ul {
+    list-style: none;
+    background-color: brown;
+    padding: 0;
+}
+
+#menu_1 li {
+    margin-bottom: 5px;
+}
+
+#menu_1 a {
+    color: gray;
+    font-size: 25px;
+    display: block;
+    text-decoration: none;
+    padding: 0.5em 0 0.5em 1.5em;
+    font-weight: bold;
+}
+
+#menu_1 a.current {
+    background-color: azure !important;
+    color: black;
+}
+
+#menu_1 a:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+/* Main style */
+main {
+    padding: 2.5rem;
+    margin: 1rem;
+    border: 2px solid black;
+    background-color: rgba(155,155,155,0.9);
+}
+main p {
+    margin: 5px;
+}
+
+/* Footer navigation bar  */
+
+#social_menu ul {
+    list-style: none;
+    background-color: brown;
+    padding: 0;
+}
+
+#social_menu a{
+    color: gray;
+    font-size: 30px;
+    display: block;
+    text-decoration: none;
+    padding: 0.5em ;
+}
+
+#social_menu li{
+    border: 1.5px solid black;
+}
+
+#social_menu a:hover {
+    background-color: white;
+}
+
+footer nav {
+    margin: 0 0.5rem;
+}
+
+/* Container background */
+ body {
+    background-image: url("../images/sekiro-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position-x: 80%;
+}
+@media only screen and (min-width: 768px){
+    /* Top navigation bar */
+    header {
+        background-position-x: none;
+    }
+    #menu_1 ul li {
+        margin-bottom: 0;
+        float: left;
+    }
+    #menu_1 ul:after {
+        content: "";
+        display: table;
+        clear: both;
+    }   
+    #menu_1 a {
+        padding: 0.5em 1em;
+    }
+    /* Main background*/
+    body {
+    background-size: 110%;
+    background-position-x: none;
+    }
+    /* Social navigation bar */
+    #social_menu ul li {
+        margin-bottom: 0;
+        float: left;
+    }
+    #social_menu ul:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    #social_menu li{
+        border: none;
+    }
+    #social_menu a {
+        padding: 0.5em 1em;
+    }
+}
