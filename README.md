@@ -186,3 +186,52 @@ Or it can be written as separate properties.
 - `background-position`: the horizontal and vertical position of a background image.
 
 `linear-gradient()`: a special property that works with background or background-image to set a multi-colored background.
+
+## Chapter 6 - CSS for Page Layout
+
+**How to float and clear elements**
+
+- When `float: right;` is added to the aside selector, both main and footer will wrap to the left of the aside.
+- If you do not want a sibling element to wrap, add a `clear: both;` statement to its selector.
+- For a two-column layout where the main content is fluid and the aside is fixed, you use CSS to set the parent container width to a percent and don't set the main width
+
+**CSS Properties for creating text columns**
+
+- You can use `column-count`, `column-gap`, and `column-rule` CSS properties to make the text easier to read on desktop devices. A fourth property `column-span` is not supported by every browser.
+
+**Ways to position an element**
+
+- Position takes in five values: `static`, `relative`, `absolute`, `fixed`, and `sticky`.
+- The default position of every element is `static`.
+- To modify the position, you'll need to apply the top, bottom, right, and left properties and in that way specify where and how much you want to move the element.
+
+**z-index**
+
+- The z-index CSS property can be added to any positioned element to create a stack order. Elements with higher values will be positioned on top of elements with smaller values.
+- The default value is 0. Negative number will be placed behind them.
+
+## Chapter 7 - Lists, Links, Navigation
+
+**How to code list**
+
+- There are two common list in html is `<ol>` and `<ul>`.
+- There is a third one called description lists `<dl>`.
+- To create a nested list, you nest a `<ul>` or `<ol>` element within an `<li>` element.
+- You can use the CSS `list-style-type` and `list-style-image` properties to change the bullet or number style in an unordered or ordered list.
+
+**How to link to another page**
+
+- Note the accesskey and tabindex attributes. An access key is a keystroke combination that can be used to activate a link. The tab order is the sequence that the links will be tabbed to when the user presses the Tab key.
+
+**How to create links to placeholders**
+
+To create a placeholder, simply add an id attribute to any element on the page. Headings are usually a good place to put them.
+```html
+<h2 id="reason1">Our modular book organization gives the trainer flexibility</h2>
+```
+To create a link that goes to a placeholder on the same page, you code the href attribute as # followed by the id attribute of the placeholder element
+```html
+<a href="#reason1">Modular book organization</a>
+```
+
+
