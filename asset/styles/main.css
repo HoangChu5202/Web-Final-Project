@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    max-width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -12,14 +13,14 @@ header {
     background-position-x: center;
     position: relative;
   }
-  #title {
+#title {
     background-color: yellow;
     position: absolute;
-    right: 25px;
-    bottom: 25px;
+    left: 15px;
+    top: 15px;
     z-index: 1;
     padding: 50px;
-  }
+}
 
 /* Top navigation bar  */
 #menu_1 {
@@ -34,7 +35,7 @@ header {
 }
 
 #menu_1 li {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 #menu_1 a {
@@ -56,10 +57,12 @@ header {
     color: black;
 }
 
+
 /* Main style */
 main {
+    width: 90%;
     padding: 2.5rem;
-    margin: 1rem;
+    margin: 1rem auto;
     border: 2px solid black;
     background-color: rgba(155,155,155,0.9);
 }
@@ -83,12 +86,17 @@ main p {
     padding: 0.5em ;
 }
 
-#social_menu li{
-    border: 1.5px solid black;
-}
-
 #social_menu a:hover {
     background-color: white;
+}
+#social_menu ul li {
+    margin-bottom: 0;
+    float: left;
+}
+#social_menu ul:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 footer nav {
@@ -102,11 +110,28 @@ footer nav {
     background-attachment:fixed;
     background-position-x: 80%;
 }
+footer p {
+    margin-left: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
 @media only screen and (min-width: 768px){
     /* Top navigation bar */
     header {
         background-position-x: none;
+        position: relative;
     }
+    #title {
+        position: absolute;
+        left: auto;
+        top: auto;
+        right: 25px;
+        bottom: 25px;
+        height: fit-content;
+        width: fit-content;
+      }
     #menu_1 ul li {
         margin-bottom: 0;
         float: left;
@@ -121,23 +146,22 @@ footer nav {
     }
     /* Main background*/
     body {
-    background-size: 110%;
     background-position-x: none;
+    max-width: none;
     }
     /* Social navigation bar */
-    #social_menu ul li {
-        margin-bottom: 0;
-        float: left;
-    }
-    #social_menu ul:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+    
+    
     #social_menu li{
         border: none;
     }
     #social_menu a {
         padding: 0.5em 1em;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header {
+        height: 400px;
     }
 }
