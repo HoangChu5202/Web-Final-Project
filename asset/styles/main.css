@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
 * {
     box-sizing: border-box;
     max-width: 100%;
@@ -14,12 +16,14 @@ header {
     position: relative;
   }
 #title {
-    background-color: yellow;
+    /* background-color: yellow; */
     position: absolute;
     left: 15px;
     top: 15px;
     z-index: 1;
-    padding: 50px;
+}
+#title img{
+    max-width: 250px;
 }
 
 /* Top navigation bar  */
@@ -60,14 +64,14 @@ header {
 
 /* Main style */
 main {
-    width: 90%;
+    width: 80%;
     padding: 2.5rem;
-    margin: 1rem auto;
+    margin: 3rem auto;
     border: 2px solid black;
     background-color: rgba(155,155,155,0.9);
 }
 main p {
-    margin: 5px;
+    margin: 16px;
 }
 
 /* Footer navigation bar  */
@@ -131,7 +135,14 @@ footer p {
         bottom: 25px;
         height: fit-content;
         width: fit-content;
+        background-color: black;
+        padding: 30px;
+        border-style: inset;
+        border-width: 10px;
       }
+    #title img{
+        max-width: 400px;
+    }
     #menu_1 ul li {
         margin-bottom: 0;
         float: left;
@@ -147,11 +158,44 @@ footer p {
     /* Main background*/
     body {
     background-position-x: none;
-    max-width: none;
     }
+    /* Main section*/
+    main {
+        width: 65%;
+    }
+    main div {
+        margin: 20px;
+    }
+    .summary_box1 {
+        display: flex;
+        flex-wrap: row wrap;
+        justify-content: space-around;
+        /* overflow: hidden; */
+    }
+    .summary_box1 p {
+        border: 1px solid black;
+        text-indent: 2rem;
+        padding: 20px;
+    }
+    .summary_box2 {
+        display: flex;
+        flex-wrap: row wrap;
+        justify-content: space-around;
+        /* overflow: hidden; */
+    }
+    .summary_box2 p {
+        border: 1px solid black;
+        text-indent: 2rem;
+        padding: 20px;
+    }
+    .flex_item {
+        width: 50%;
+    }
+    div img {
+        width: auto;
+    }
+
     /* Social navigation bar */
-    
-    
     #social_menu li{
         border: none;
     }

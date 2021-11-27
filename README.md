@@ -234,4 +234,43 @@ To create a link that goes to a placeholder on the same page, you code the href 
 <a href="#reason1">Modular book organization</a>
 ```
 
+## Chapter 8 - Responsive Web Design
 
+**The three components of a responsive design**
+
+The three components of Responsive Design are:
+- fluid layout
+    - A web page that uses a fluid layout adapts gracefully to all screen sizes.
+    - A web page that uses a fixed layout maintains the same width for all screen sizes or devices.
+- media queries
+    - To adjust the appearance of a web page to different device sizes, you use media queries.
+- scalable images.
+    - A scalable image is scaled to the width of the element that contains it.
+
+**How to test a responsive design**
+
+The best method to ensure that your web pages will scale to multiple platforms and devices, is to deploy the website to a server and test it on a variety of devices.
+<br>
+However, an easier way to test a responsive design is to use the developer tools of a modern browser.
+
+**How to scale images**
+
+Always use: `max-width: 100%;` in wild card selector to make the image never grow out its parent container.
+
+**How to control the mobile viewport**
+
+When you develop responsive web pages, always use a meta element in the HTML to set the width of the viewport to the device width.
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+**How to code media queries**
+
+A media query is defined in CSS using the `@media` selector.
+```css
+@media only screen and (min-width: 768px) {
+
+}
+```
+- `min-wight:` should use when you want all style in there is for destop or large screen mobile device.
+- `max-wight:` should use when you want all style in there is for mobile phone.
