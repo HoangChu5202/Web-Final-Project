@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
 
 * {
     box-sizing: border-box;
@@ -72,7 +71,13 @@ main {
 }
 main p {
     margin: 16px;
+    text-align: justify;
 }
+main h1{
+    margin: 20px 20px 30px;
+}
+
+
 
 /* Footer navigation bar  */
 
@@ -121,7 +126,7 @@ footer p {
 }
 
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1000px){
     /* Top navigation bar */
     header {
         background-position-x: none;
@@ -157,44 +162,43 @@ footer p {
     }
     /* Main background*/
     body {
-    background-position-x: none;
+        background-position-x: none;
+        background-size: 100%;
     }
     /* Main section*/
     main {
-        width: 65%;
+        width: 70%;
     }
     main div {
         margin: 20px;
     }
+    main p {
+        text-indent: 2rem;
+        /* padding: 20px; */
+        text-align: justify;
+        font-size: 1.2em;
+    }
     .summary_box1 {
         display: flex;
-        flex-wrap: row wrap;
-        justify-content: space-around;
-        /* overflow: hidden; */
-    }
-    .summary_box1 p {
-        border: 1px solid black;
-        text-indent: 2rem;
-        padding: 20px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
     }
     .summary_box2 {
         display: flex;
-        flex-wrap: row wrap;
-        justify-content: space-around;
-        /* overflow: hidden; */
-    }
-    .summary_box2 p {
-        border: 1px solid black;
-        text-indent: 2rem;
-        padding: 20px;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
     }
     .flex_item {
-        width: 50%;
+        flex-basis: 50%;
     }
-    div img {
-        width: auto;
+    img {
+        width: 400px;
     }
-
+    .gameplay {
+        column-count: 2;
+    }
     /* Social navigation bar */
     #social_menu li{
         border: none;
@@ -204,8 +208,17 @@ footer p {
     }
 }
 
+
+
 @media only screen and (max-width: 768px){
     header {
         height: 400px;
+    }
+    .summary_box2 {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .summary_box2 img {
+        order: -1;
     }
 }
