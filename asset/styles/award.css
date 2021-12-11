@@ -1,0 +1,53 @@
+.awards {
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 15px;
+}
+.awards img{
+    width: 120px;
+    margin: 10px;
+    float: left;
+}
+.awards:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.awards h1{
+    margin-top: 60px;
+}
+
+main {
+    padding: 0;
+}
+table, td {
+    border:1px solid black;
+    margin: 10px;
+}
+table {
+    border-collapse:collapse;
+    caption-side:bottom;
+}
+td {
+    padding: 10px;
+}
+.bafta h1{
+    margin: 10px;
+    margin-top: 50px;
+}
+.navgtr h1{
+    margin: 10px;
+}
+.navgtr h1{
+    margin: 10px;
+}
+.sxsw h1{
+    margin: 10px;
+}
+.The_Game_Awards h1{
+    margin: 10px;
+}
+.The_Game_Awards img{
+    width: 616px;
+    margin: 20px auto;
+}
